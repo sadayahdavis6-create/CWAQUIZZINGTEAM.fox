@@ -4,9 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>College Of West Africa Quizzing platflom</title>
-<meta name="google-site-verification" content="IsD9fQYbQKcSjkX5NKjTw4o5reMsPyOxZOh0pmDH8YA" />
 <link rel="stylesheet" href="style.css">
-  <meta name="google-site-verification" content="IsD9fQYbQKcSjkX5NKjTw4o5reMsPyOxZOh0pmDH8YA" />
+<meta name="google-site-verification" content="IsD9fQYbQKcSjkX5NKjTw4o5reMsPyOxZOh0pmDH8YA" />
 <style>
 body, html { margin:0; font-family: Arial, sans-serif; background:#f2f2f2; }
 
@@ -69,7 +68,12 @@ nav { display:flex; justify-content:space-between; align-items:center; backgroun
 #loader { position:fixed; inset:0; background:white; display:flex; justify-content:center; align-items:center; z-index:20000; }
 .loader-circle { width:60px; height:60px; border:6px solid #ddd; border-top-color:#2f5372; border-radius:50%; animation:spin 1s linear infinite; }
 @keyframes spin{to{transform:rotate(360deg);}
-                
+
+/* FLOATING SOCIAL ICONS */
+.floating-social { position: fixed; right: 20px; bottom: 50px; display: flex; flex-direction: column; gap: 15px; z-index: 10000; }
+.floating-social a img { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.3); transition: transform 0.2s; }
+.floating-social a img:hover { transform: scale(1.1); }
+
 /* ABOUT SECTION */
 .about-section { max-width:1000px; margin:50px auto; display:flex; flex-wrap:wrap; gap:30px; align-items:center; }
 .about-image { flex:1 1 400px; text-align:center; }
@@ -105,10 +109,10 @@ nav { display:flex; justify-content:space-between; align-items:center; backgroun
 <!-- FLOATING SOCIAL ICONS -->
 <div class="floating-social">
   <a href="https://www.facebook.com/profile.php?id=61554865997214" target="_blank">
-    <img src="" alt="">
+    <img src="facebook.jpg" alt="Facebook">
   </a>
   <a href="https://wa.me/077 650 2382" target="_blank">
-    <img src="" alt="">
+    <img src="whatsapp.jpg" alt="whatsApp">
   </a>
 </div>
 
